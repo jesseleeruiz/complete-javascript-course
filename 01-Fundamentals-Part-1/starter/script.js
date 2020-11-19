@@ -135,7 +135,7 @@ console.log(markHigherBMI);
 
 /*
 LECTURE 6 - STRINGS & TEMPLATE LITERALS
-*/
+
 
 const firstname = "Jesse";
 const job = "Software Engineer";
@@ -160,3 +160,27 @@ lines");
 console.log(`String
 with multiple
 lines! Woo Hoo!`)
+*/
+
+/*
+LECTURE 7 - TAKING DECISIONS: IF/ELSE STATEMENTS
+*/
+const age = 15;
+
+if (age >= 18) {
+    console.log(`Sarah can start driving 🚗`);
+} else {
+    const yearsLeft = 18 - age;
+    console.log(`Sarah is too young. She has to wait ${yearsLeft} more years.`)
+}
+
+const birthYear = 1989;
+let century;
+
+if (birthYear <= 2000) {
+    century = `20th century`;
+} else {
+    centruy = `21st century`;
+}
+
+console.log(century);
