@@ -132,3 +132,31 @@ console.log(marksBMI);
 console.log(johnsBMI);
 console.log(markHigherBMI);
 */
+
+/*
+LECTURE 6 - STRINGS & TEMPLATE LITERALS
+*/
+
+const firstname = "Jesse";
+const job = "Software Engineer";
+const birthYear = 1989;
+const currentYear = 2037;
+
+const jesse = "I'm " + firstname + ", a " + (currentYear - birthYear) + " year old " + job + "!";
+console.log(jesse);
+
+// Template Literals
+const jesseNew = `I'm ${firstname}, a ${currentYear - birthYear} year old ${job}!`;
+console.log(jesseNew)
+
+console.log(`Just a regular string... No need to worry.`);
+
+// Multi line before ES6
+console.log("String with \n\
+multiple \n\
+lines");
+
+// Template multi line string
+console.log(`String
+with multiple
+lines! Woo Hoo!`)
