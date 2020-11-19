@@ -56,3 +56,15 @@ console.log(typeof year);
 
 console.log(typeof null); // Prints out object which is wrong.
 */
+
+/*
+LECTURE 2 - Let, Const, Var
+*/
+
+let age = 30;
+age = 31;
+
+const birthYear = 1991;
+birthYear = 1990;
+
+// var should be avoided, but understood for legacy reasons.
