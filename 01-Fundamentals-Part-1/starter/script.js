@@ -58,8 +58,8 @@ console.log(typeof null); // Prints out object which is wrong.
 */
 
 /*
-LECTURE 2 - Let, Const, Var
-*/
+LECTURE 3 - Let, Const, Var
+
 
 let age = 30;
 age = 31;
@@ -68,3 +68,32 @@ const birthYear = 1991;
 birthYear = 1990;
 
 // var should be avoided, but understood for legacy reasons.
+*/
+
+/* LECTURE 4 - BASIC OPERATORS
+let currentYear = 2030;
+const ageJesse = currentYear - 1989;
+const ageLogan = currentYear - 2019;
+console.log(ageJesse, ageLogan);
+
+const firstName = "Jesse";
+const lastName = "Ruiz";
+
+console.log(firstName + " " + lastName);
+
+// Assignment Operators
+
+let x = 10 + 5;     // 15
+x += 10;            // x = x + 10 = 25
+x *= 4;             // x = x * 4 = 100
+x++;                // x = x + 1 = 101
+x--;                // x = x - 1 = 100
+
+console.log(x);
+
+// Comparision Operators
+console.log(ageLogan < ageJesse);
+*/
+
+/* LECTURE 5 - OPERATOR PRECEDENCE
+*/
