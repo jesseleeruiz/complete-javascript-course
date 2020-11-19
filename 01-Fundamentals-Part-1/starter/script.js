@@ -96,4 +96,39 @@ console.log(ageLogan < ageJesse);
 */
 
 /* LECTURE 5 - OPERATOR PRECEDENCE
+
+let currentYear = 2030;
+const ageJesse = currentYear - 1989;
+const ageLogan = currentYear - 2019;
+
+console.log(currentYear - 1989 > currentYear - 2019);
+*/
+
+/*
+// Test Data 1
+let marksWeight = 78;
+let marksHeight = 1.69;
+let johnsWeight = 92;
+let johnsHeight = 1.95;
+
+let marksBMI = marksWeight / marksHeight ** 2;
+let johnsBMI = johnsWeight / johnsHeight ** 2;
+
+let markHigherBMI = marksBMI > johnsBMI;
+console.log(marksBMI);
+console.log(johnsBMI);
+console.log(markHigherBMI);
+
+// Test Data 2
+marksWeight = 95;
+marksHeight = 1.88;
+johnsWeight = 85;
+johnsHeight = 1.76;
+
+marksBMI = marksWeight / marksHeight ** 2;
+johnsBMI = johnsWeight / johnsHeight ** 2;
+markHigherBMI = marksBMI > johnsBMI;
+console.log(marksBMI);
+console.log(johnsBMI);
+console.log(markHigherBMI);
 */
