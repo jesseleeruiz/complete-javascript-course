@@ -164,7 +164,7 @@ lines! Woo Hoo!`)
 
 /*
 LECTURE 7 - TAKING DECISIONS: IF/ELSE STATEMENTS
-*/
+
 const age = 15;
 
 if (age >= 18) {
@@ -184,3 +184,5 @@ if (birthYear <= 2000) {
 }
 
 console.log(century);
+*/
+
