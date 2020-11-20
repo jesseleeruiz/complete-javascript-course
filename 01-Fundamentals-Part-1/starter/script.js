@@ -186,3 +186,175 @@ if (birthYear <= 2000) {
 console.log(century);
 */
 
+/*
+LECTURE 7 - TYPE CONVERSION & COERCION
+
+
+// Conversion - When we manually convert a type from one to another
+
+// Strings to Numbers
+const inputYear = "1991";
+console.log(inputYear + 18); // 199118
+const newYear = Number(inputYear);
+const addedValue = newYear + 18;
+console.log(addedValue);
+console.log(typeof addedValue);
+
+// Numbers to String
+console.log(String(23));
+
+// Type Coercion - JS converts one of the values to match the other one
+const convertedNumber = "I am " + 23 + " years old."
+console.log(convertedNumber);
+console.log(typeof convertedNumber); // string
+
+// Not all operators do type conversion to string
+console.log('23' - '10' - 3);
+// The minus operator convert them to a number whereas the addition operator adds them as a string
+// The addition is the only one that converts to a string.
+*/
+
+/*
+LECTURE 8 - TRUTHY AND FALSEY VALUES
+
+
+// 5 falsey values: 0, '', undefined, null, NaN -> Will convert to false
+
+console.log(Boolean(0));        // false
+console.log(Boolean(undefined)); // false
+console.log(Boolean('Jesse'));  // true
+console.log(Boolean({}));       // true
+
+const money = 0; // 0 converts to false which is why the else block is executed.
+if (money) {
+    console.log("Don't spend it all!");
+} else {
+    console.log("You should get a job.");
+}
+
+let height;
+if (height) {
+    console.log("Yay! Height has a value!");
+} else {
+    console.log("Height is UNDEFINED");
+}
+*/
+
+/*
+LECTURE 9 - EQUALITY OPERATORS
+
+const age = 18;
+if (age === 18) console.log("You just became an adult!");
+
+// === Strict equality operator. Does not do type coercion.
+// == Does type coercion | '18' = 18 => true
+
+const favorite = prompt("What's your favorite number?");
+console.log(favorite);
+
+if (favorite == 23) {
+    console.log("Awesome. 23 is an amazing number.");
+}
+*/
+
+/*
+LECTURE 11 - LOGICAL OPERATORS
+
+const hasDriversLicense = true;
+const hasGoodVision = true;
+
+console.log(hasDriversLicense && hasGoodVision);
+
+const shouldDrive = hasDriversLicense && hasGoodVision;
+
+// if (shouldDrive) {
+//     console.log("Sarah is able to drive.");
+// } else {
+//     console.log("Someone else should drive...");
+// }
+
+const isTired = false; // var C
+
+console.log(hasDriversLicense || hasGoodVision || isTired);
+
+if (hasDriversLicense && hasGoodVision && !isTired) {
+    console.log("Sarah is able to drive.");
+} else {
+    console.log("Someone else should drive...");
+}
+*/
+
+/*
+LECTURE 13 - SWITCH STATEMENTS
+
+const day = "Monday";
+
+switch (day) {
+    case "Monday": // day === "Monday"
+        console.log("Work on design lessons.");
+        console.log("Make sure to work out.");
+        break;
+    case "Tuesday":
+        console.log("Work on iOS lessons.");
+        break;
+    case "Wenesday":
+        console.log("Work on CS lessons.");
+        console.log("Make sure to work out.");
+        break;
+    case "Thursday":
+        console.log("Work on Web lessons.");
+        break;
+    case "Friday":
+        console.log("Watch Logan.");
+        console.log("Make sure to work out.");
+        break;
+    case "Saturday":
+        console.log("Go to the beach.");
+        break;
+    case "Sunday":
+        console.log("Clean the house.");
+        break;
+    default:
+        console.log("Not a valid day!");
+}
+*/
+
+/*
+LECTURE 14 - STATEMENTS & EXPRESSIONS
+
+// A piece of code that produces a value.
+3 + 4   // This is an expression. It will produce a value.
+1991
+true && false && !false
+
+// Statement is an expression, but does not produce a value.
+if (23 > 10) {
+    console.log("Do something");    // A statement, but doesn't really produce a value. The Expression
+    // inside does.
+}
+
+// In a template literal, JS expects expression and not statements.
+*/
+
+/*
+LECTURE 15 - THE CONDITIONAL (TERNARY) OPERATOR
+
+
+const age = 31;
+
+age >= 18 ? console.log("I like to drink beer 🍺") : console.log("I like to drink soda 🥤");
+
+const drink = age >= 18 ? "beer 🍺" : "soda 🥤";
+console.log(drink);
+
+let anotherDrink;
+if (age >= 18) {
+    anotherDrink = "beer 🍺";
+} else {
+    anotherDrink = "soda 🥤";
+}
+console.log(anotherDrink);
+
+// Can use in a template literal
+console.log(`I like to drink ${drink}!`);
+*/
